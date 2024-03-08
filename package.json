@@ -1,0 +1,27 @@
+{
+    "name": "@zhifou/tsup-starter",
+    "version": "1.0.21",
+    "description": "",
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "exports": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "scripts": {
+        "build": "tsup src/index.ts",
+        "start": "npm run build -- --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tsup": "^8.0.2",
+        "typescript": "^5.4.2"
+    },
+    "publishConfig": {
+      "access": "public"
+    }
+}
